@@ -29,7 +29,7 @@ order by hour;
 select * from users join progress
 on users.user_id = progress.user_id;
 
-SELECT u.email_domain, learn_cpp, learn_html, learn_java, learn_javascript, learn_sql 
+SELECT u.email_domain, p.learn_cpp, p.learn_html, p.learn_java, p.learn_javascript, p.learn_sql 
 FROM users u JOIN progress p ON u.user_id = p.user_id 
 WHERE u.email_domain 
 LIKE '%.edu' 
